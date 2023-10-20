@@ -10,4 +10,8 @@ describe Kudomon do
   it 'initializes with a type' do
     expect(kudomon.type).to eq 'grass'
   end
+
+  it 'has a position, initialy nil' do
+    expect(kudomon.position).to be_nil
+  end
 end
