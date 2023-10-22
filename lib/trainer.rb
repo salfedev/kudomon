@@ -36,4 +36,9 @@ class Trainer
     kudomon.position = nil
     kudomon.trainer = self
   end
+
+  # trainer can move to a new position
+  def move_to(new_position)
+    @position = new_position
+  end
 end

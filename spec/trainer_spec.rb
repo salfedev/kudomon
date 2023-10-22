@@ -56,4 +56,10 @@ describe Trainer do
     expect(kekatchu.trainer).to eq luke
     expect { luke.catch(kekatchu) }.to raise_error 'This kudomon has already been caught'
   end
+
+  it 'can move to a new position' do
+    expect(luke).to respond_to(:move_to).with(1).argument
+    luke.move_to([1, 2])
+    expect(luke.position).to eq [1, 2]
+  end
 end
