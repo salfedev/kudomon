@@ -28,4 +28,8 @@ class Kudomon
   def level_up
     @level += 1
   end
+
+  def learn_move(move)
+    @moves << move
+  end
 end

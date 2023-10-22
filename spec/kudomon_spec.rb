@@ -83,4 +83,10 @@ describe Kudomon do
     expect(kudomon.moves).to eq []
   end
 
+  it "can learn a move" do
+    expect(kudomon).to respond_to(:learn_move).with(1).argument
+    move = double :move
+    kudomon.learn_move(move)
+    expect(kudomon.moves).to include move
+  end
 end
