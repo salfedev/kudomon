@@ -58,6 +58,7 @@ PLATFORMS
 
 DEPENDENCIES
   guard-rspec
+  pry
   rspec
   sqlite3
 
