@@ -1,5 +1,11 @@
 source "http://rubygems.org"
+ruby '3.2.1'
 
-ruby '2.3.1'
 
-gem 'rspec'
+group :development, :test do
+    gem 'sqlite3'
+    gem 'rspec'
+    gem 'guard-rspec', require: false
+    gem 'pry'
+end
+
